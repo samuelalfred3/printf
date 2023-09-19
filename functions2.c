@@ -133,7 +133,7 @@ int print_rot13string(va_list types, char buffer[],
 	char x;
 	char *str;
 	unsigned int i, j;
-	int count = 0
+	int count = 0;
 	char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char out[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
