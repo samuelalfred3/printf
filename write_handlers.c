@@ -107,7 +107,7 @@ int write_num(int ind, char buffer[], int flags, int width, int prec,
 	if (width > length)
 	{
 		for (i = 1; i < width - length + 1; i++)
-				buffer[i] = padd;
+			buffer[i] = padd;
 		buffer[i] = '\0';
 		if (flags & F_MINUS && padd == ' ') /* extra char to the left of buffer */
 		{
@@ -244,4 +244,3 @@ int write_pointer(char buffer[], int ind, int length, int width, int flags,
 		buffer[--ind] = extra_c;
 	return (write(1, &buffer[ind], BUFF_SIZE - ind - 1));
 }
-
