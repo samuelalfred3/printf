@@ -18,8 +18,7 @@ int print_unsigned(va_list types, char buffer[],
 	unsigned long int num = va_arg(types, unsigned long int);
 
 	num = convert_size_unsgnd(num, size);
-
-	if (num == 0)
+	if(num == 0)
 		buffer[i--] = '0';
 	buffer[BUFF_SIZE - 1] = '\0';
 	while (num > 0)
