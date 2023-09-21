@@ -1,5 +1,5 @@
 #include "main.h"
-/***********************WRITE HANDLE*******************/
+
 /**
  * handle_write_char - prints a string
  * @c: char types
@@ -40,7 +40,7 @@ int handle_write_char(char c, char buffer[], int flags, int width,
 	}
 	return (write(1, &buffer[0], 1));
 }
-/******************WRITE NUMBER*******************/
+
 /**
  * write_number - prints a string
  * @is_negative: lis of arguments
@@ -127,7 +127,7 @@ int write_num(int ind, char buffer[], int flags, int width, int prec,
 	return (write(1, &buffer[ind], length));
 }
 /**
- * write_unsgned - Writes an unsigned number
+ * write_unsgnd - Writes an unsigned number
  * @is_negative: Number indicating if the sum is negative
  * @ind: Index at which the number starts in the buffer
  * @buffer: Array of chars
@@ -137,7 +137,7 @@ int write_num(int ind, char buffer[], int flags, int width, int prec,
  * @size: Size specifier
  * Return: Number of written chars
  */
-int write_unsgned(int is_negative, int ind, char buffer[], int flags,
+int write_unsgnd(int is_negative, int ind, char buffer[], int flags,
 		int width, int precision, int size)
 {
 	/* The number is stored at the buffer's right and starts at position i */
